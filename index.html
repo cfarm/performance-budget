@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Performance Budget Calculator</title>
+</head>
+<body>
+	<header>
+		<h1>Performance Budget Calculator</h1>
+	</header>
+	<main>
+		<h2>Calculate page load times based on file size, requests, and rendering time for your page assets.</h2>
+
+		<section class="calculator">
+			<form>
+				<label for="http-requests">HTTP Requests:</label>
+				<input id="http-requests" class="requests" type="number" placeholder="Number"></input>
+
+				<label for="page-size">Page size:</label>
+				<input id="page-size" class="size" type="number" placeholder="Number of kb"></input> kb
+
+				<label for="images-size">Total Images:</label>
+				<input id="http-requests" class="requests" type="number" placeholder="Number"></input>				
+			</form>
+		</section>
+
+
+		<section class="result">
+			Page load time result
+		</section>
+	</main>
+
+<!--
+	performance budget tool
+
+
+
+HTTP Requests: _____
+Page weight:   _____k
+			(images: ___k) (either input total size of images on the page, or input avg image size by img file type - png,gif,jpeg -and # of images on the page)
+			(css: ___k)
+			(js: ____k) = ____ms of parsing time (1k of js = 1ms increase in parse time according to Google)
+
+Predicted page load time (estimate!!): _____ seconds to first page load, _____ seconds in repeated loads (needs to include the parse time above for JS)
+-->
+
+</body>
+</html>
